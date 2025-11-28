@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const AboutSection = () => {
   const features = [
     {
@@ -26,15 +28,30 @@ const AboutSection = () => {
         <div className="absolute top-20 left-20 w-72 h-72 bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
       </div>
 
-      <div className="max-w-5xl mx-auto relative z-10 text-center">
-        <div className="mb-8 animate-fadeIn">
-          <div className="inline-block px-4 py-2 bg-indigo-100 rounded-full mb-4">
-            <span className="text-indigo-700 font-semibold text-sm">About Us</span>
+      <div className="max-w-5xl mx-auto relative z-10">
+        <div className="mb-12 animate-fadeIn">
+          <div className="relative w-full h-48 md:h-72 rounded-2xl overflow-hidden border-2 border-indigo-200 shadow-2xl hover:shadow-3xl transition-shadow duration-300">
+            <Image
+              src="/banner.png"
+              alt="Ambati Net World Banner"
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-black bg-linear-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent mb-6">
-            About Ambati Net World
-          </h2>
         </div>
+
+        <div className="text-center">
+          <div className="mb-8 animate-fadeIn">
+            <div className="inline-block px-4 py-2 bg-indigo-100 rounded-full mb-4">
+              <span className="text-indigo-700 font-semibold text-sm">About Us</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-black bg-linear-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent mb-6">
+              About Ambati Net World
+            </h2>
+          </div>
 
         <p className="text-lg md:text-xl leading-8 text-gray-700 max-w-3xl mx-auto mb-16 backdrop-blur-sm bg-white/50 p-8 rounded-2xl border border-indigo-200">
           Ambati Net World అనేది Chandupatla గ్రామంలో ప్రజలకు నమ్మకంగా, వేగంగా మరియు తక్కువ ఛార్జీలతో డిజిటల్ సేవలను అందించడానికి ప్రారంభించబడిన ఒక Common Service Centre.
@@ -63,12 +80,13 @@ const AboutSection = () => {
           ))}
         </div>
 
-        <div className="inline-block">
-          <div className="bg-linear-to-r from-indigo-600 to-pink-600 p-0.5 rounded-2xl">
-            <div className="bg-white rounded-2xl px-8 py-6 text-center">
-              <p className="text-xl md:text-2xl font-black text-transparent bg-linear-to-r from-indigo-600 to-pink-600 bg-clip-text">
-                మీరు ఏ ఆన్‌లైన్ పని చెప్పినా — మేము మాత్రమే చేసేందుకు సిద్ధంగా ఉన్నాము! ✨
-              </p>
+          <div className="inline-block">
+            <div className="bg-linear-to-r from-indigo-600 to-pink-600 p-0.5 rounded-2xl">
+              <div className="bg-white rounded-2xl px-8 py-6 text-center">
+                <p className="text-xl md:text-2xl font-black text-transparent bg-linear-to-r from-indigo-600 to-pink-600 bg-clip-text">
+                  మీరు ఏ ఆన్‌లైన్ పని చెప్పినా — మేము మాత్రమే చేసేందుకు సిద్ధంగా ఉన్నాము! ✨
+                </p>
+              </div>
             </div>
           </div>
         </div>

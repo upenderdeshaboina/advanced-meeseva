@@ -4,7 +4,7 @@ export const metadata = {
   title: "Ambati Net World",
   description: "Common Service Centre in Chandupatla Village",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/yellesh.png",
   },
 };
 
